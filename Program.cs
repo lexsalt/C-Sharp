@@ -146,6 +146,30 @@ fraudulentOrderIDs[2] = "C789";
 // }
 
 // seventh test: recap to part 1 to continue with the course (was doing part 2 without knowing)
-Random coin = new Random();
-int coinFlip = coin.Next(2);
-Console.WriteLine($"Coin Flip: {(coinFlip > 0 ? "heads": "tails")}");
+// Random coin = new Random();
+// int coinFlip = coin.Next(2);
+// Console.WriteLine($"Coin Flip: {(coinFlip > 0 ? "heads": "tails")}");
+
+// eight test
+
+string permission = "Admin|Manager";
+int level = 55;
+
+Console.WriteLine();
+if (permission.Contains("Admin")) {
+    if (level <= 55) {
+        Console.WriteLine("Welcome, Admin user.");
+
+    } else {
+        Console.WriteLine("Welcome, Super Admin user.");
+    }
+} else if (permission.Contains("Manager")) {
+        if (level <= 20) {
+        Console.WriteLine("You do not have sufficient privileges.");
+
+    } else {
+        Console.WriteLine("Contact an Admin for access.");
+    }
+} else {
+    Console.WriteLine("You do not have sufficient privileges.");
+}
