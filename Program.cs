@@ -45,20 +45,32 @@ int total = roll1+roll2+roll3;
 
 Console.WriteLine($"Dice Roll: {roll1} + {roll2} + {roll3} = Total: {total}");
 
-if ((roll1 == roll2 && roll1 != roll3) || (roll2 == roll3 && roll1 != roll3) || (roll1 == roll3 && roll1 != roll2)) {
-    Console.WriteLine("You rolled a double. Adding +2 to your total");
-    total += 2;
-    Console.WriteLine($"New total: {total}");
-}
-if ((roll1 == roll2) && (roll2 == roll3)) {
+// if ((roll1 == roll2 && roll1 != roll3) || (roll2 == roll3 && roll1 != roll3) || (roll1 == roll3 && roll1 != roll2)) {
+//     Console.WriteLine("You rolled a double. Adding +2 to your total");
+//     total += 2;
+//     Console.WriteLine($"New total: {total}");
+// }
+// if ((roll1 == roll2) && (roll2 == roll3)) {
+//     Console.WriteLine("You Rolled triple! adding +6 to total");
+//     total +=6;
+//     Console.WriteLine($"New total: {total}");
+// }
+if ((roll1 == roll2) || (roll2 == roll3) || (roll1 == roll3)) {
+    if ((roll1 == roll2) && (roll2 == roll3)) {
     Console.WriteLine("You Rolled triple! adding +6 to total");
     total +=6;
     Console.WriteLine($"New total: {total}");
+    } else {
+        Console.WriteLine("You rolled a double. Adding +2 to your total");
+        total += 2;
+        Console.WriteLine($"New total: {total}");
+    }
 }
+
 
 if (total >= 15) {
     Console.WriteLine("You win");
-} else if (total < 15) {
+} else {
     Console.WriteLine("You loose");
 }
 
