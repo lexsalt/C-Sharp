@@ -1,0 +1,14 @@
+/Users/emilianosal/Desktop/CODE/C Sharp/CsharpProjects/TestProject/bin/Debug/net7.0/TestProject
+/Users/emilianosal/Desktop/CODE/C Sharp/CsharpProjects/TestProject/bin/Debug/net7.0/TestProject.deps.json
+/Users/emilianosal/Desktop/CODE/C Sharp/CsharpProjects/TestProject/bin/Debug/net7.0/TestProject.runtimeconfig.json
+/Users/emilianosal/Desktop/CODE/C Sharp/CsharpProjects/TestProject/bin/Debug/net7.0/TestProject.dll
+/Users/emilianosal/Desktop/CODE/C Sharp/CsharpProjects/TestProject/bin/Debug/net7.0/TestProject.pdb
+/Users/emilianosal/Desktop/CODE/C Sharp/CsharpProjects/TestProject/obj/Debug/net7.0/TestProject.GeneratedMSBuildEditorConfig.editorconfig
+/Users/emilianosal/Desktop/CODE/C Sharp/CsharpProjects/TestProject/obj/Debug/net7.0/TestProject.AssemblyInfoInputs.cache
+/Users/emilianosal/Desktop/CODE/C Sharp/CsharpProjects/TestProject/obj/Debug/net7.0/TestProject.AssemblyInfo.cs
+/Users/emilianosal/Desktop/CODE/C Sharp/CsharpProjects/TestProject/obj/Debug/net7.0/TestProject.csproj.CoreCompileInputs.cache
+/Users/emilianosal/Desktop/CODE/C Sharp/CsharpProjects/TestProject/obj/Debug/net7.0/TestProject.dll
+/Users/emilianosal/Desktop/CODE/C Sharp/CsharpProjects/TestProject/obj/Debug/net7.0/refint/TestProject.dll
+/Users/emilianosal/Desktop/CODE/C Sharp/CsharpProjects/TestProject/obj/Debug/net7.0/TestProject.pdb
+/Users/emilianosal/Desktop/CODE/C Sharp/CsharpProjects/TestProject/obj/Debug/net7.0/TestProject.genruntimeconfig.cache
+/Users/emilianosal/Desktop/CODE/C Sharp/CsharpProjects/TestProject/obj/Debug/net7.0/ref/TestProject.dll
