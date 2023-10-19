@@ -117,13 +117,35 @@ fraudulentOrderIDs[2] = "C789";
 
 // sixth test: foreach
 
-int[] inventory = { 200, 450, 700, 175, 250 };
-int sum = 0;
-int bin = 0;
-foreach (int items in inventory)
-{
-    sum += items;
-    bin++;
-    Console.WriteLine($"Bin {bin} = {items} items (Running total: {sum})");
-}
-Console.WriteLine($"We have {sum} items in inventory.");
+// int[] inventory = { 200, 450, 700, 175, 250 };
+// int sum = 0;
+// int bin = 0;
+// foreach (int items in inventory)
+// {
+//     sum += items;
+//     bin++;
+//     Console.WriteLine($"Bin {bin} = {items} items (Running total: {sum})");
+// }
+// Console.WriteLine($"We have {sum} items in inventory.");
+
+// string[] inventory = { "B123",
+// "C234",
+// "A345",
+// "C15",
+// "B177",
+// "G3003",
+// "C235",
+// "B179" };
+
+// foreach (string name in inventory)
+// {
+//    if (name.StartsWith("B"))
+// {
+//     Console.WriteLine($"{name}");
+// }
+// }
+
+// seventh test: recap to part 1 to continue with the course (was doing part 2 without knowing)
+Random coin = new Random();
+int coinFlip = coin.Next(2);
+Console.WriteLine($"Discount: {coinFlip}");
