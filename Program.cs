@@ -148,4 +148,4 @@ fraudulentOrderIDs[2] = "C789";
 // seventh test: recap to part 1 to continue with the course (was doing part 2 without knowing)
 Random coin = new Random();
 int coinFlip = coin.Next(2);
-Console.WriteLine($"Discount: {coinFlip}");
+Console.WriteLine($"Coin Flip: {(coinFlip > 0 ? "heads": "tails")}");
