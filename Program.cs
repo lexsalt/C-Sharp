@@ -358,38 +358,46 @@ fraudulentOrderIDs[2] = "C789";
 
 //14th
 // initialize variables - graded assignments 
-int currentAssignments = 5;
+// int currentAssignments = 5;
 
-int sophia1 = 93;
-int sophia2 = 87;
-int sophia3 = 98;
-int sophia4 = 95;
-int sophia5 = 100;
+// int sophia1 = 93;
+// int sophia2 = 87;
+// int sophia3 = 98;
+// int sophia4 = 95;
+// int sophia5 = 100;
 
-int nicolas1 = 80;
-int nicolas2 = 83;
-int nicolas3 = 82;
-int nicolas4 = 88;
-int nicolas5 = 85;
+// int nicolas1 = 80;
+// int nicolas2 = 83;
+// int nicolas3 = 82;
+// int nicolas4 = 88;
+// int nicolas5 = 85;
 
-int zahirah1 = 84;
-int zahirah2 = 96;
-int zahirah3 = 73;
-int zahirah4 = 85;
-int zahirah5 = 79;
+// int zahirah1 = 84;
+// int zahirah2 = 96;
+// int zahirah3 = 73;
+// int zahirah4 = 85;
+// int zahirah5 = 79;
 
-int jeong1 = 90;
-int jeong2 = 92;
-int jeong3 = 98;
-int jeong4 = 100;
-int jeong5 = 97;
+// int jeong1 = 90;
+// int jeong2 = 92;
+// int jeong3 = 98;
+// int jeong4 = 100;
+// int jeong5 = 97;
 
-Console.WriteLine("Student\t\tGrade");
-int sophiaGrade = (sophia1+sophia2+sophia3+sophia4+sophia5) /currentAssignments;
-int nicolasGrade = (nicolas1+nicolas2+nicolas3+nicolas4+nicolas5) /currentAssignments;
-int zahirahGrade = (zahirah1+zahirah2+zahirah3+zahirah4+zahirah5) /currentAssignments;
-int jeongGrade = (jeong1+jeong2+jeong3+jeong4+jeong5) /currentAssignments;
-Console.WriteLine($"Sophia:\t\t{sophiaGrade}\t {(sophiaGrade > 90 ? "A":"B")}");
-Console.WriteLine($"Nicolas:\t{nicolasGrade}\t {(nicolasGrade > 90 ? "A":"B")}");
-Console.WriteLine($"Zahirah:\t{zahirahGrade}\t {(zahirahGrade > 90 ? "A":"B")}");
-Console.WriteLine($"Jeong:\t\t{jeongGrade}\t {(jeongGrade > 90 ? "A":"B")}");
+// Console.WriteLine("Student\t\tGrade");
+// int sophiaGrade = (sophia1+sophia2+sophia3+sophia4+sophia5) /currentAssignments;
+// int nicolasGrade = (nicolas1+nicolas2+nicolas3+nicolas4+nicolas5) /currentAssignments;
+// int zahirahGrade = (zahirah1+zahirah2+zahirah3+zahirah4+zahirah5) /currentAssignments;
+// int jeongGrade = (jeong1+jeong2+jeong3+jeong4+jeong5) /currentAssignments;
+// Console.WriteLine($"Sophia:\t\t{sophiaGrade}\t {(sophiaGrade > 90 ? "A":"B")}");
+// Console.WriteLine($"Nicolas:\t{nicolasGrade}\t {(nicolasGrade > 90 ? "A":"B")}");
+// Console.WriteLine($"Zahirah:\t{zahirahGrade}\t {(zahirahGrade > 90 ? "A":"B")}");
+// Console.WriteLine($"Jeong:\t\t{jeongGrade}\t {(jeongGrade > 90 ? "A":"B")}");
+
+// 15th test
+string firstName = "Bob";
+int widgetsPurchased = 7;
+// Testing a change to the message.
+// int widgetsSold = 7;
+// Console.WriteLine($"{firstName} sold {widgetsSold} widgets.");
+Console.WriteLine($"{firstName} purchased {widgetsPurchased} widgets.");
