@@ -279,58 +279,117 @@ fraudulentOrderIDs[2] = "C789";
 // }
 
 //12th test
-string[] ipv4Input = {"107.31.1.5", "255.0.0.255", "555..0.555", "255...255"};
-string[] address;
-bool validLength = false;
-bool validZeroes = false;
-bool validRange = false;
+// string[] ipv4Input = {"107.31.1.5", "255.0.0.255", "555..0.555", "255...255"};
+// string[] address;
+// bool validLength = false;
+// bool validZeroes = false;
+// bool validRange = false;
 
-foreach (string ip in ipv4Input) 
-{
-    address = ip.Split(".", StringSplitOptions.RemoveEmptyEntries);
+// foreach (string ip in ipv4Input) 
+// {
+//     address = ip.Split(".", StringSplitOptions.RemoveEmptyEntries);
 
-    ValidateLength(); 
-    ValidateZeroes(); 
-    ValidateRange();
+//     ValidateLength(); 
+//     ValidateZeroes(); 
+//     ValidateRange();
 
-    if (validLength && validZeroes && validRange) 
-    {
-        Console.WriteLine($"{ip} is a valid IPv4 address");
-    } 
-    else 
-    {
-        Console.WriteLine($"{ip} is an invalid IPv4 address");
-    }
-}
+//     if (validLength && validZeroes && validRange) 
+//     {
+//         Console.WriteLine($"{ip} is a valid IPv4 address");
+//     } 
+//     else 
+//     {
+//         Console.WriteLine($"{ip} is an invalid IPv4 address");
+//     }
+// }
 
-void ValidateLength() 
-{
-    validLength = address.Length == 4;
-};
+// void ValidateLength() 
+// {
+//     validLength = address.Length == 4;
+// };
 
-void ValidateZeroes() 
-{
-    foreach (string number in address) 
-    {
-        if (number.Length > 1 && number.StartsWith("0")) 
-        {
-            validZeroes = false;
-            return;
-        }
-    }
+// void ValidateZeroes() 
+// {
+//     foreach (string number in address) 
+//     {
+//         if (number.Length > 1 && number.StartsWith("0")) 
+//         {
+//             validZeroes = false;
+//             return;
+//         }
+//     }
 
-    validZeroes = true;
-}
+//     validZeroes = true;
+// }
 
-void ValidateRange() 
-{
-    foreach (string number in address) 
-    {
-        if (int.Parse(number) > 255) 
-        {
-            validRange = false;
-            return;
-        }
-    }
-    validRange = true;
-}
+// void ValidateRange() 
+// {
+//     foreach (string number in address) 
+//     {
+//         if (int.Parse(number) > 255) 
+//         {
+//             validRange = false;
+//             return;
+//         }
+//     }
+//     validRange = true;
+// }
+
+// 13th test
+
+// Random random = new Random();
+// int luck = random.Next(100);
+
+// string[] text = {"You have much to", "Today is a day to", "Whatever work you do", "This is an ideal time to"};
+// string[] good = {"look forward to.", "try new things!", "is likely to succeed.", "accomplish your dreams!"};
+// string[] bad = {"fear.", "avoid major decisions.", "may have unexpected outcomes.", "re-evaluate your life."};
+// string[] neutral = {"appreciate.", "enjoy time with friends.", "should align with your values.", "get in tune with nature."};
+
+// void tellFortune() {
+// Console.WriteLine("A fortune teller whispers the following words:");
+// string[] fortune = (luck > 75 ? good : (luck < 25 ? bad : neutral));
+// for (int i = 0; i < 4; i++) 
+// {
+//     Console.Write($"{text[i]} {fortune[i]} ");
+// }
+// Console.WriteLine();
+// };
+// tellFortune();
+
+//14th
+// initialize variables - graded assignments 
+int currentAssignments = 5;
+
+int sophia1 = 93;
+int sophia2 = 87;
+int sophia3 = 98;
+int sophia4 = 95;
+int sophia5 = 100;
+
+int nicolas1 = 80;
+int nicolas2 = 83;
+int nicolas3 = 82;
+int nicolas4 = 88;
+int nicolas5 = 85;
+
+int zahirah1 = 84;
+int zahirah2 = 96;
+int zahirah3 = 73;
+int zahirah4 = 85;
+int zahirah5 = 79;
+
+int jeong1 = 90;
+int jeong2 = 92;
+int jeong3 = 98;
+int jeong4 = 100;
+int jeong5 = 97;
+
+Console.WriteLine("Student\t\tGrade");
+int sophiaGrade = (sophia1+sophia2+sophia3+sophia4+sophia5) /currentAssignments;
+int nicolasGrade = (nicolas1+nicolas2+nicolas3+nicolas4+nicolas5) /currentAssignments;
+int zahirahGrade = (zahirah1+zahirah2+zahirah3+zahirah4+zahirah5) /currentAssignments;
+int jeongGrade = (jeong1+jeong2+jeong3+jeong4+jeong5) /currentAssignments;
+Console.WriteLine($"Sophia:\t\t{sophiaGrade}\t {(sophiaGrade > 90 ? "A":"B")}");
+Console.WriteLine($"Nicolas:\t{nicolasGrade}\t {(nicolasGrade > 90 ? "A":"B")}");
+Console.WriteLine($"Zahirah:\t{zahirahGrade}\t {(zahirahGrade > 90 ? "A":"B")}");
+Console.WriteLine($"Jeong:\t\t{jeongGrade}\t {(jeongGrade > 90 ? "A":"B")}");
