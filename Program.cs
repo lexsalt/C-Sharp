@@ -65,44 +65,34 @@ Console.WriteLine(largerValue);
 // }
 
 // Fourth 
-Random random = new Random();
-int daysUntilExpiration = random.Next(12);
-int discountPercentage = 0;
+// Random random = new Random();
+// int daysUntilExpiration = random.Next(12);
+// int discountPercentage = 0;
 
-// Your code goes here
-Console.WriteLine($"{daysUntilExpiration}");
-if (daysUntilExpiration <= 10) {
-    if (daysUntilExpiration <=5) {
-        if (daysUntilExpiration > 1) {
-            Console.WriteLine($"Your subscription expires in {daysUntilExpiration} days.");
-            discountPercentage = 10;
-            Console.WriteLine($"Renew now and save {discountPercentage}%");
-        } else if (daysUntilExpiration == 1) {
-            Console.WriteLine($"Your subscription expires within a day!");
-            discountPercentage = 20;
-            Console.WriteLine($"Renew now and save {discountPercentage}%");
-        } else {
-                Console.WriteLine("Your suscription has expired.");
-            }
-    } else {
-        //10 days or less and more than 5
-        Console.WriteLine("Your subscription will expire soon. Renew now!");
+// // Your code goes here
+// Console.WriteLine($"{daysUntilExpiration}");
+// if (daysUntilExpiration <= 10) {
+//     if (daysUntilExpiration <=5) {
+//         if (daysUntilExpiration > 1) {
+//             Console.WriteLine($"Your subscription expires in {daysUntilExpiration} days.");
+//             discountPercentage = 10;
+//             Console.WriteLine($"Renew now and save {discountPercentage}%");
+//         } else if (daysUntilExpiration == 1) {
+//             Console.WriteLine($"Your subscription expires within a day!");
+//             discountPercentage = 20;
+//             Console.WriteLine($"Renew now and save {discountPercentage}%");
+//         } else {
+//                 Console.WriteLine("Your suscription has expired.");
+//             }
+//     } else {
+//         //10 days or less and more than 5
+//         Console.WriteLine("Your subscription will expire soon. Renew now!");
 
-    }
-} else {
-    Console.WriteLine("Your subscription is fine.");
-}
-// //10 days or less
-// Your subscription will expire soon. Renew now!
+//     }
+// } else {
+//     Console.WriteLine("Your subscription is fine.");
+// }
 
+// fifth
 
-// // five days or less
-// ]Your subscription expires in _ days.
-// Renew now and save 10%!
-
-// // one day or less 
-// Your subscription expires within a day!
-// Renew now and save 20%!
-
-// // suscription expired
-// Your subscription has expired.
+string[] fraudulentOrderIDs = new string[3];
