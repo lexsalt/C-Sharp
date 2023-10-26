@@ -645,7 +645,14 @@ fraudulentOrderIDs[2] = "C789";
 
 // 21th test
 
-for (int i = 0; i < 10; i++)
-{
+// for (int i = 0; i < 10; i++)
+// {
+//     Console.WriteLine(i);
+//     if (i == 7) break;
+// }
+
+// 22th test
+
+for (int i = 0; i<101; i++) {
     Console.WriteLine(i);
 }
