@@ -653,6 +653,17 @@ fraudulentOrderIDs[2] = "C789";
 
 // 22th test
 
-for (int i = 0; i<101; i++) {
-    Console.WriteLine(i);
+for (int i = 0; i < 101; i++) {
+
+    if ((i % 3 == 0) && (i % 5 == 0)) {
+        Console.WriteLine($"{i} - FizzFuzz");
+    } else if (i % 3 == 0) {
+        Console.WriteLine($"{i} - Buzz");
+    } else if (i % 5 == 0) {
+        Console.WriteLine($"{i} - Fizz");
+    } else {
+        Console.WriteLine($"{i}");
+    }
 }
+
+// 23th test
