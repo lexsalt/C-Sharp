@@ -653,17 +653,97 @@ fraudulentOrderIDs[2] = "C789";
 
 // 22th test
 
-for (int i = 0; i < 101; i++) {
+// for (int i = 0; i < 101; i++) {
 
-    if ((i % 3 == 0) && (i % 5 == 0)) {
-        Console.WriteLine($"{i} - FizzFuzz");
-    } else if (i % 3 == 0) {
-        Console.WriteLine($"{i} - Buzz");
-    } else if (i % 5 == 0) {
-        Console.WriteLine($"{i} - Fizz");
-    } else {
-        Console.WriteLine($"{i}");
-    }
-}
+//     if ((i % 3 == 0) && (i % 5 == 0)) {
+//         Console.WriteLine($"{i} - FizzFuzz");
+//     } else if (i % 3 == 0) {
+//         Console.WriteLine($"{i} - Buzz");
+//     } else if (i % 5 == 0) {
+//         Console.WriteLine($"{i} - Fizz");
+//     } else {
+//         Console.WriteLine($"{i}");
+//     }
+// }
 
 // 23th test
+
+// Random random = new Random();
+// int current = random.Next(1, 11);
+
+/*
+do
+{
+    current = random.Next(1, 11);
+    Console.WriteLine(current);
+} while (current != 7);
+*/
+
+// while (current >= 3)
+// {
+//     Console.WriteLine(current);
+//     current = random.Next(1, 11);
+// }
+// Console.WriteLine($"Last number: {current}");
+
+// 24th test
+
+// Random random = new Random();
+// int current = random.Next(1, 11);
+
+// do
+// {
+//     current = random.Next(1, 11);
+
+//     if (current >= 8) continue; // if (current >= 8) continue;, our code ensures that a value of current that is greater than or equal to 8 will never be written to the output window.
+
+//     Console.WriteLine(current);
+// } while (current != 7);
+
+/*
+while (current >= 3)
+{
+    Console.WriteLine(current);
+    current = random.Next(1, 11);
+}
+Console.WriteLine($"Last number: {current}");
+*/
+
+// 25th test 
+// CountTo(5);
+
+// 	void CountTo(int max) 
+// 	{
+// 		for (int i = 0; i < max; i++)
+// 		{
+// 			Console.Write($"${i}, ");
+// 		}
+//         Console.WriteLine("");
+// 	}
+
+// 26th test 
+
+int[] schedule = {800, 1200, 1600, 2000};
+
+void DisplayAdjustedTimes(int[] times, int currentGMT, int newGMT) 
+{
+int diff = 0;
+if (Math.Abs(newGMT) > 12 || Math.Abs(currentGMT) > 12)
+{
+    Console.WriteLine("Invalid GMT");
+}
+else if (newGMT <= 0 && currentGMT <= 0 || newGMT >= 0 && currentGMT >= 0) 
+{
+    diff = 100 * (Math.Abs(newGMT) - Math.Abs(currentGMT));
+} 
+else 
+{
+    diff = 100 * (Math.Abs(newGMT) + Math.Abs(currentGMT));
+}
+for (int i = 0; i < times.Length; i++) 
+{
+    int newTime = ((times[i] + diff)) % 2400;
+    Console.WriteLine($"{times[i]} -> {newTime}");
+}
+}
+DisplayAdjustedTimes(schedule, 6, -6);
