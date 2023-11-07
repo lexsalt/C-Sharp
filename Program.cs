@@ -956,28 +956,127 @@ Console.WriteLine($"Last number: {current}");
 // }
 
 // 35th test 
-string[] words = {"racecar" ,"talented", "deified", "tent", "tenet"};
+// string[] words = {"racecar" ,"talented", "deified", "tent", "tenet"};
 
-Console.WriteLine("Is it a palindrome?");
-foreach (string word in words) 
+// Console.WriteLine("Is it a palindrome?");
+// foreach (string word in words) 
+// {
+//     Console.WriteLine($"{word}: {IsPalindrome(word)}");
+// }
+
+// bool IsPalindrome(string word) 
+// {
+//     int start = 0;
+//     int end = word.Length - 1;
+
+//     while (start < end) 
+//     {
+//         if (word[start] != word[end]) 
+//         {
+//             return false;
+//         }
+//         start++;
+//         end--;
+//     }
+
+//     return true;
+// }
+
+// 36th test
+
+// int target = 30;
+// int[] coins = new int[] {5, 5, 50, 25, 25, 10, 5};
+// int[,] result = TwoCoins(coins, target);
+
+// if (result.Length == 0) 
+// {
+//     Console.WriteLine("No two coins make change");
+// } 
+// else 
+// {
+//     Console.WriteLine("Change found at positions:");
+//     for (int i = 0; i < result.GetLength(0); i++) 
+//     {
+//         if (result[i,0] == -1) 
+//         {
+//             break;
+//         }
+//         Console.WriteLine($"{result[i,0]},{result[i,1]}");
+//     }
+// }
+
+// int[,] TwoCoins(int[] coins, int target) 
+// {
+//     int[,] result = {{-1,-1},{-1,-1},{-1,-1},{-1,-1},{-1,-1}};
+//     int count = 0;
+
+//     for (int curr = 0; curr < coins.Length; curr++) 
+//     {
+//         for (int next = curr + 1; next < coins.Length; next++) 
+//         {    
+//             if (coins[curr] + coins[next] == target) 
+//             {
+//                 result[count, 0] = curr;
+//                 result[count, 1] = next;
+//                 count++;
+//             }
+//             if (count == result.GetLength(0)) 
+//             {
+//                 return result;
+//             }
+//         }
+//     }
+//     return (count == 0) ? new int[0,0] : result;
+// }
+
+// 37th test
+
+Random random = new Random();
+
+Console.WriteLine("Would you like to play? (Y/N)");
+if (ShouldPlay()) 
 {
-    Console.WriteLine($"{word}: {IsPalindrome(word)}");
+    PlayGame();
 }
 
-bool IsPalindrome(string word) 
+bool ShouldPlay() 
 {
-    int start = 0;
-    int end = word.Length - 1;
+    string response = Console.ReadLine();
+    return response.ToLower().Equals("y");
+}
 
-    while (start < end) 
-    {
-        if (word[start] != word[end]) 
-        {
-            return false;
-        }
-        start++;
-        end--;
+void PlayGame() 
+{
+    var play = true;
+
+    while (play) {
+        var target = GetTarget();
+        var roll = RollDice();
+
+        Console.WriteLine($"Roll a number greater than {target} to win!");
+        Console.WriteLine($"You rolled a {roll}");
+        Console.WriteLine(WinOrLose(roll, target));
+        Console.WriteLine("\nPlay again? (Y/N)");
+
+        play = ShouldPlay();
     }
+}
 
-    return true;
+int GetTarget() 
+{
+    return random.Next(1, 6);
+}
+
+int RollDice() 
+{
+    return random.Next(1, 7);
+}
+
+string WinOrLose(int roll, int target) 
+{
+    if (roll > target) 
+    {
+        return "You win!";
+    }
+    return "You lose!";
 }
