@@ -1313,22 +1313,73 @@ Console.WriteLine($"Last number: {current}");
 
 //46th test
 
-string pangram = "The quick brown fox jumps over the lazy dog";
+// string pangram = "The quick brown fox jumps over the lazy dog";
 
-// Step 1
-string[] message = pangram.Split(' ');
+// // Step 1
+// string[] message = pangram.Split(' ');
 
-//Step 2
-string[] newMessage = new string[message.Length];
+// //Step 2
+// string[] newMessage = new string[message.Length];
 
-// Step 3
-for (int i = 0; i < message.Length; i++)
-{
-    char[] letters = message[i].ToCharArray();
-    Array.Reverse(letters);
-    newMessage[i] = new string(letters);
-}
+// // Step 3
+// for (int i = 0; i < message.Length; i++)
+// {
+//     char[] letters = message[i].ToCharArray();
+//     Array.Reverse(letters);
+//     newMessage[i] = new string(letters);
+// }
 
-//Step 4
-string result = String.Join(" ", newMessage);
-Console.WriteLine(result);
+// //Step 4
+// string result = String.Join(" ", newMessage);
+// Console.WriteLine(result);
+
+// 47th test. final tst
+
+// string orderStream = "B123,C234,A345,C15,B177,G3003,C235,B179";
+// string[] items = orderStream.Split(',');
+// Array.Sort(items);
+
+// foreach (var item in items)
+// {
+//     if (item.Length == 4)
+//     {
+//         Console.WriteLine(item);
+//     }
+//     else
+//     {
+//         Console.WriteLine(item + "\t- Error");
+//     }
+// }
+
+// 48th test
+
+string customerName = "Ms. Barros";
+
+string currentProduct = "Magic Yield";
+int currentShares = 2975000;
+decimal currentReturn = 0.1275m;
+decimal currentProfit = 55000000.0m;
+
+string newProduct = "Glorious Future";
+decimal newReturn = 0.13125m;
+decimal newProfit = 63000000.0m;
+
+Console.WriteLine($"Dear {customerName},");
+Console.WriteLine($"As a customer of our {currentProduct} offering we are excited to tell you about a new financial product that would dramatically increase your return.\n");
+Console.WriteLine($"Currently, you own {currentShares:N} shares at a return of {currentReturn:P}.\n");
+Console.WriteLine($"Our new product, {newProduct} offers a return of {newReturn:P}.  Given your current volume, your potential profit would be {newProfit:C}.\n");
+
+Console.WriteLine("Here's a quick comparison:\n");
+
+string comparisonMessage = "";
+
+comparisonMessage = currentProduct.PadRight(20);
+comparisonMessage += String.Format("{0:P}", currentReturn).PadRight(10);
+comparisonMessage += String.Format("{0:C}", currentProfit).PadRight(20);
+
+comparisonMessage += "\n";
+comparisonMessage += newProduct.PadRight(20);
+comparisonMessage += String.Format("{0:P}", newReturn).PadRight(10);
+comparisonMessage += String.Format("{0:C}", newProfit).PadRight(20);
+
+Console.WriteLine(comparisonMessage);
